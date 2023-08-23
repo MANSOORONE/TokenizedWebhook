@@ -1,0 +1,11 @@
+This is Tokenized Webhook Integration
+This Integration will automatically build when we did changes to the git repository
+In this have generate a token id in profile configure paste any text and generate an id for example thisisatokenizedwebhookintegrationtoken
+Copy that id in Notepad for further
+Add a New Job > Git Url > Build Triggers > Trigger build remotly > add token thisisatokenizedwebhookintegration
+Copy the Url to below JENKINS_URL/job/TokenWebhook/build?token=TOKEN_NAME
+Save
+Go to Git Repo > Settings > Add Webhook > payload url: http://3.111.168.89:8080/job/TWHJob-2/build > application/json
+Go to Jenkins and Build Now 
+Add some files in git repo and paste that url in another browser it will automatically build jenkins job
+http://manu:11965dfd470c883afbd6eea29284401769@54.87.245.192:8080/job/Tokenwebhook/build?token=thisismytokenisedwebhooktoken
